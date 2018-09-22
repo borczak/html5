@@ -1,10 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="linki" style="height: 100vh;">
+        <!--        linki do zewnetrznego zrodla-->
+        <!--        w nowej karcie target= "_blank"-->
+        <a href="https://google.com" target="_blank">https://google.com</a>
+
+        <!--        linki do zewnetrznego ( w przypadku hostingu)-->
+        <!--        <a href="/contact.html">contact</a> hosting podpina sie automatycznie dzieki /-->
+        <a href="contact.html">kontakt</a>
+
+        <!--        kotwica- link do elementu na stronie o podany id-->
+        <a href="#team">team</a>
+
+        <!--        mailto:adres@mailowy.pl - odsylacz do maila-->
+        <a href="mailto:ola.borczak@gmail.com"> napisz do mnie</a>
+        <!--   tel:+48numerbezspacji - odsyłącz do telefonu-->
+        <a href="tel:+48663322111">663322111</a>
+    </div>
+    <div class="tabela">
+        <table>
+            <!--           table-kontener tabeli-->
+            <!--   thead       glowa tabeli-->
+            <thead>
+                <!--            rząd dla głowy tabeli - tr-->
+                <tr>
+                    <th>nr</th>
+                    <th>nazwa</th>
+                    <th>cena</th>
+                </tr>
+            </thead>
+            <!--            tbody- cialo tabeli-->
+            <tbody>
+                <tr>
+                    <td>numer 1</td>
+                    <td>numer 2</td>
+                    <td>numer 3</td>
+                </tr>
+                <tr>
+                    <td>numer 1</td>
+                    <td>numer 2</td>
+                    <td>numer 3</td>
+                </tr>
+                <tr>
+                    <td>numer 1</td>
+                    <td>numer 2</td>
+                    <td>numer 3</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+    <!--    formularze-->
+    <div class="form">
+        <form action="" method="">
+            <!--           label okresla co trzeba wpisac w polu poniżej for ta sama wartosc co id, nad label-- wewnątrz placeholder -->
+            <label for="name">imię</label>
+            <input type="text" name="name" placeholder="wpisz imię" id="name">
+            <input type="email" name="email" placeholder="wpisz numer" required>
+            <input type="number" name="number">
+            <!--required-wymagany np przy formularzu bez czegos nie przejdzie dalej
+placeholder="cochcemy"ale nie do select, disabled - wygasza pole->
+<!--       checkbox i radio button nie mozna stylować!  checkbox zaznaczanie ( zaznacz odznacz) np zgody -->
+            <input type="checkbox" name="checkbox">
+            <input type="radio" name="pizza">
+            <input type="radio" name="pizza">
+            <!--       jesli mamy ten sam atrybut to mozna odzaczyc checkboxa, jesli w ogole nie mamy name to nie mozna go odznaczyć-->
+            <textarea maxlength="20" name="msg" id="msg" cols="30" rows="10"></textarea>
+            <!--       lista rozwijana selectem, value do validacji-->
+            <select name="" id="">
+                <option value="">samochod</option>
+                <option value="">rower</option>
+                <option value="">rolki</option>
+            </select>
+            <!--       textarea mozna powiekszyc ale zablokowac ta funkcje tez w css resize-->
+            <!--       maxlenght normalnie jest 255, ale tu ustalamy ile chcemy-->
+            <!--            domyslnie bez value jest napis przeslij-->
+            <input type="submit" value="wyslij">
+        </form>
+    </div>
+
+    <section id="team" style="height: 100vh;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptas, est quam consequuntur molestiae deserunt ipsum, minus beatae neque aperiam quas illum quidem dolore eligendi impedit nulla earum sunt. Vitae!</p>
+
+    </section>
 </body>
+
 </html>
